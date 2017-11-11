@@ -11,29 +11,29 @@
   </head>
   <body id="page-top">
     <!-- Navigation -->
-    <nav>
-      <div class="container">
-        <a class="w-line text-uppercase nav-left" href="#page-top">Start Bootsatrap</a>
-        <div class="nav-rigth">
-          <ul class="w-format">
-            <li>
-              <a class="w-line text-uppercase" href="#portfolio">portfolio</a>
-            </li>
-            <li>
-              <a class="w-line text-uppercase" href="#about">About</a>
-            </li>
-            <li>
-              <a class="w-line text-uppercase" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="container">
+      <div class="nav-left">
+        <a class="w-line text-uppercase" href="#page-top">Start Bootstrap</a>
+      </div>
+      <div class="nav-rigth">
+        <ul class="w-format">
+          <li>
+            <a class="w-line text-uppercase aNav" href="#portfolio">portfolio</a>
+          </li>
+          <li>
+            <a class="w-line text-uppercase aNav" href="#about">About</a>
+          </li>
+          <li>
+            <a class="w-line text-uppercase aNav" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
     
     <!-- Header -->
     <header>
       <figure>
-        <img src="assets/images/profile.png" alt="Profile">
+        <img class="imgHead" src="assets/images/profile.png" alt="Profile">
       </figure>
       <div>
         <span class="text-uppercase">Start Bootstrap</span>
@@ -48,12 +48,12 @@
         <h2 class="text-uppercase">portfolio</h2>
         <hr class="star-black">
         <div class="grid">
-          <div><img src="assets/images/portfolio/cabin.png" alt="cabin"></div>
-          <div><img src="assets/images/portfolio/cake.png" alt="cake"></div>
-          <div><img src="assets/images/portfolio/circus.png" alt="circus"></div>
-          <div><img src="assets/images/portfolio/game.png" alt="game"></div>
-          <div><img src="assets/images/portfolio/safe.png" alt="safe"></div>
-          <div><img src="assets/images/portfolio/submarine.png" alt="submarine"></div>
+          <div><a href="#"><img class="imgPort" src="assets/images/portfolio/cabin.png" alt="cabin"></a></div>
+          <div><a href="#"><img class="imgPort" src="assets/images/portfolio/cake.png" alt="cake"></a></div>
+          <div><a href="#"><img class="imgPort" src="assets/images/portfolio/circus.png" alt="circus"></a></div>
+          <div><a href="#"><img class="imgPort" src="assets/images/portfolio/game.png" alt="game"></a></div>
+          <div><a href="#"><img class="imgPort" src="assets/images/portfolio/safe.png" alt="safe"></a></div>
+          <div><a href="#"><img class="imgPort" src="assets/images/portfolio/submarine.png" alt="submarine"></a></div>
         </div>
       </div>
     </section>
@@ -63,52 +63,53 @@
       <div>
         <h2 class="text-uppercase">About</h2>
         <hr class="star-white">
-        <div class="box">
-          <div>
+        <div class="boxAbout">
+          <div class="column1">
             <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
           </div>
-          <div>
+          <div class="column2">
             <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
           </div>
-          <br>
-          <div>
-            <a class="w-line button" href="#">
-                <i class="fa fa-download" aria-hidden="true"></i>
-                <span>Download Theme</span>
-            </a>
-          </div>
+        <div class="btnAbout">
+          <a class="w-line aButton" href="#">
+              <i class="fa fa-download" aria-hidden="true"></i>
+              <span class="textBtn">Download Theme</span>
+          </a>
+        </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-      <div>
+      <div class="boxContact">
         <h2 class="text-uppercase">Contact Me</h2>
         <hr class="star-black">
         <div>
-          <form action="">
+          <form>
             <div><input type="text" placeholder="Name"></div>
              <div><input type="text" placeholder="Email Address"></div>
              <div><input type="text" placeholder="Phone Number"></div>
-             <div><input type="text" placeholder="Message"></div>
-             <br>
-             <div><button>Send</button></div>
+             <div><input id="message" type="text" placeholder="Message"></div>
+             <br>      
           </form>
         </div>
       </div>
+      <div class="btnSend"><button>Send</button></div>
     </section>
 
     <!-- Footer -->
     <footer>
       <div>
-        <div class="row1">
-          <div class="column1">
+        <div class="footer-above">
+          <div class="footer-column1">
             <h3 class="text-uppercase">Location</h3>
+            <br>
             <p>3481 Melrose Place <br> Beverly Hills, CA 90210</p>
           </div>
-          <div class="column2">
+          <div class="footer-column2">
             <h3 class="text-uppercase">Around the Web</h3>
+            <br>
             <ul class="w-format">
               <li><a class="w-line" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
               <li><a class="w-line" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
@@ -117,12 +118,13 @@
               <li><a class="w-line" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
             </ul>
           </div>
-          <div class="column3">
+          <div class="footer-column3">
             <h3 class="text-uppercase">About Freelancer</h3>
+            <br>
             <p>Freelance is a free to use, open source Bootstrap theme created by <a class="w-line" href="https://startbootstrap.com/">Start Bootstrap</a>.</p>
           </div>
         </div>
-        <div class="row2">
+        <div class="footer-below">
           <div>Copyright © Your Website 2017</div>
         </div>
       </div>
